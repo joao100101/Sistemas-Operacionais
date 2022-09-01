@@ -64,4 +64,8 @@ Instalar serviços de domínio do Active Directory>
 - Próximo
 - Instalar -> Aguardar a Instalação
 - Fechar
+<Configurando implantação de domínio>
 - Clicar na bandeira com o simbolo de alerta -> Promover este servidor a um controlador de domínio
+* Abre uma tela *
+- Adicionar uma nova floresta
+- Nome do domínio raiz = ads4-srv.local
