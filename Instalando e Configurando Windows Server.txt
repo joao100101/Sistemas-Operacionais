@@ -69,3 +69,13 @@ Instalar serviços de domínio do Active Directory>
 * Abre uma tela *
 - Adicionar uma nova floresta
 - Nome do domínio raiz = ads4-srv.local
+- Próximo
+- Nível funcional> 2016 em ambos
+- Digitar senha do modo de restauração
+- Próximo
+- Próximo
+- Nome de domínio NetBIOS = ADS4-SRV (Foi sozinho) -> Próximo
+- Especificar local do banco de dados do AD...> -> Próximo
+- Examine suas seleções> -> Próximo
+- Verificação de pré-requisitos> -> Instalar *Aguardar*
+* Computador reinicia sozinho *
