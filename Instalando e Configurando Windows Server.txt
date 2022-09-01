@@ -1,0 +1,67 @@
+---------[Criação]-----------------
+Novo
+Setar nome WinServer2019
+Windows Server 2019 (64-bit)
+Memória 4096
+Criar novo disco rígido virtual agora
+Criar
+VDI
+Dinamicamente alocado
+50GB
+Criar
+-------------------------------------
+Sistema>
+	Placa Mãe>
+	-Desmarcar disquete e colocar em último
+	Processador>
+	-2 Núcleos
+Armazenamento>
+	Vazio>
+	- Escolher uma imagem de disco
+REDE>
+	Conectado a>
+	- Rede Interna
+
+OK
+-------------------------
+Iniciar
+Avançar
+Instalar Agora
+Não tenho a chave do produto
+
+---------------[Configurações]--------------
+Dispositivos>
+-Inserir Image de CD de convidado e Instalar na VM
+
+Gerenciando servidor>
+- Servidor Local
+- Configuração de segurança aprimorada do IE [Entrar e desativar ambos]
+- Nome do computador -> Clicar -> Alterar -> Nome = Servidor
+- Reiniciar Agora
+- *Ligou*
+- Volte em Servidor Local
+<Configurando REDE>
+- Nunca use DHCP (Sempre IP FIXO)
+- Click em Ethernet > Endereço IPv4....
+*Abre conexões de rede*
+- Botão direito em Ethernet em seguida propriedades
+- Protocolo IP Versão 4 (TCP/IPv4) -> Propriedades (ou dois clicks)
+- (Primeiro) Usar o seguinte endereço IP: 192.168.1.1 Outras maquinas não podem ter o ip exatamente igual
+- Máscara de sub-rede é gerada sozinha
+- gateway padrão deixe em branco
+- [DNS] = Domain name service (é o q resolve nomes) (Pra localizar as máquinas a partir dos nomes)
+- Endereço de LoopBack (127.0.0.1) [Servidor DNS preferencial]
+- Clicar OK e fechar.
+<Adicionando funções e recursos>
+- volte no painel e click em (Adicionar funções e recursos (2))
+- Ignorar por padrão -> Próximo
+- Instalação baseada em função ou recurso -> Próximo
+- Escolher o servidor -> Próximo
+Instalar serviços de domínio do Active Directory>
+- Clicar na caixinha e já abre uma outra tela.
+- Adicionar recursos *Click* -> Próximo
+- Próximo
+- Próximo
+- Instalar -> Aguardar a Instalação
+- Fechar
+- Clicar na bandeira com o simbolo de alerta -> Promover este servidor a um controlador de domínio
