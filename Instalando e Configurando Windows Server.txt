@@ -79,3 +79,34 @@ Instalar serviços de domínio do Active Directory>
 - Examine suas seleções> -> Próximo
 - Verificação de pré-requisitos> -> Instalar *Aguardar*
 * Computador reinicia sozinho *
+
+<ADICIONANDO UM USUARIO AO DOMÍNIO DO SERVIDOR>
+[Configurações iniciais do usuário]
+- Instale uma máquina Seguindo as configurações do virtualbox usadas no server (estou usando win10 education pro{aparentemente o home não funciona})
+- Click direito no desktop
+- Personalizar
+- Temas
+- Configurações de icones da área de trabalho
+- Selecione todos
+- Aplicar & OK.
+- Fechar a configuração
+[Configuração de Rede]
+- Botão direito em Rede > Propriedades > Ethernet
+- Alterar as configurações do adaptador
+- Botão direito > Propriedades > TCP/IPV4
+Configs IP:
+  End IP:  192.168.1.10
+  Mascara --
+  Gateway padrão: 192.168.1.1
+Configs de DNS:
+  DNS Preferencial: 192.168.1.1
+  DNS Alternativo: 8.8.8.8
+- OK, OK, SIM
+[ADICIONANDO ao dominio]
+- Computador > Propriedades > Renomear este computador
+- Nome do Computador: Desktop1
+- Membro de:
+    - Dominio: ads4-srv.local
+- OK
+- Digite o usuário e senha de administrador do servidor e OK.
+- OK em tudo e reiniciar.
