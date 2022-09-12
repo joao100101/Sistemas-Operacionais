@@ -110,3 +110,58 @@ Configs de DNS:
 - OK
 - Digite o usuário e senha de administrador do servidor e OK.
 - OK em tudo e reiniciar.
+
+<Configurando Active Directory>
+[Criando novo usuário de administrador]
+- Ferramentas
+- Usuários e Computadores do Active Directory
+- Users
+- Encontre o usuário administrador
+- Clique com o botão direito
+- Copiar
+- Infos:
+ Nome/Inicial/Sobrenome/nome.sobrenome
+- Próximo
+- Próximo
+- Concluido.
+[Criando Novo Diretório]
+- Localize na barra do lado esquerdo o nome do domínio (ads4-srv.local)
+- Click Botão direito
+- Novo
+- Unidade Organizacional
+- Coloque um nome (Deixe marcado a caixinha)
+
+[Adicionar usuario ao novo diretório]
+- Click em Users na barra do lado esquerdo
+- Localize seu usuario criado anteriormente
+- Arraste ele para a pasta TI criada
+
+[Caso queira deletar a unidade organizacional]
+- Botão direito na unidade TI criada
+- Exibir -> Recursos Avançadas
+- Botão direito em TI novamente
+- Propriedades
+- Objeto (Aqui voce encontra a caixinha para desmarcar proteção contra exclusão acidental para poder excluir)
+
+[Instruções do professor]
+- Crie 2 novas Unidades organizacionais (Todos Computadores/Todos Usuários)
+- Dentro dessas 2 novas unidades organizacionais crie mais 4 (Administrativo/Compras/Vendas/Help Desk)
+
+[Criando Usuários]
+#Senha padrão usuários (fUpassword*)
+- Em Todos usuários crie 2 usuários novos em cada diretório
+- Click no diretório
+- Botão direito
+- Novo
+- Usuário
+- Nome: User01, User01.Administrativo (EX), user01@ads4-srv.local
+
+
+[Como remover complexidade de senha] (Não recomendável) )(Deve ser feito antes de promover o pc a dominio)
+- Ferramentas
+- Política de segurança local
+- Política de conta
+- Política de senha
+- 2 Click em senha deve satisfazer.... (Desabilitado)
+
+
