@@ -162,6 +162,49 @@ Configs de DNS:
 - Política de segurança local
 - Política de conta
 - Política de senha
-- 2 Click em senha deve satisfazer.... (Desabilitado)
+- 2 Click em "senha deve satisfazer...." = (Desabilitado)
 
+[Adicionando perfil de senha simples]
+(Tela inicial do servidor)
+- Ferramentas>Central Administrativa do Active Directory
+- Servidor (ads4-srv) (Lado esquerdo)
+- Pasta System
+- Pasta Password Settings Container
+- Botão direito -> Novo -> Configuração de senha
+	Nome: Perfil de Senha Simples
+	Precedência: 1 (é tipo a prioridade (menor vale mais))
+	Impor comprimento mínimo da senha: Sim (4)
+	Impor Histórico de senha: Não
+	A senha deve atender a requisitos de complexidade: Não
+	Proteger contra exclusão acidental: Não
+	Impor duração mínima da senha: Sim (1)
+	Impor duração máxima da senha: Não
+	
+- Vamos no AD (Active-Directory) agora. (está aberto na barra de tarefas)
+- Todos Usuários
+- Botão Direito -> Novo -> Grupo
+	Nome: GRP_Senha Simples
+	Escopo do grupo: Global
+	Tipo de grupo: Segurança
+- Vamos aplicar o perfil ao grupo criado
+
+- Volte em Central Administrativa do Active-Directory
+- Servidor
+- Pasta System
+- Pasta Password Settings Container
+- Dois clicks no perfil de senha simples
+- Adicionar
+- No campo de texto digite o nome do grupo para aplicar e click em verificar nomes
+- OK/OK
+- Próximo passo
+
+- Usuarios e computadores do active directory
+- Adicionar os usuários ao grupo
+- dois clicks no grupo
+- membros
+- adicionar
+- No campo de texto digite "us" (que é o início dos nomes de usuários) e click em verificar
+- Selecione os usuarios de venda
+- Click ok (Vamos testar no desktop)
+*Woosh* A complexidade de senha não é mais necessária agora :)
 
