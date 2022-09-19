@@ -208,3 +208,35 @@ Configs de DNS:
 - Click ok (Vamos testar no desktop)
 *Woosh* A complexidade de senha não é mais necessária agora :)
 
+[Configurando restrição de logon e criação de pasta compartilhada]
+
+[Definindo política de horário]
+- Escolha um usuário
+- 2 Clicks
+- Conta
+- Horário de Logon
+
+[Criar pasta compartilhada e pasta de usuário]
+- Entre em C:
+- Novo -> Pasta (Nome: Publica)
+- Botão direito nela
+- Propriedades
+- Compartilhar
+- Compartilhamento avançado
+- Permissões
+- Remova todos
+- Adicionar
+- Usuários do Domínio
+- Marcar controle total
+- OK
+- Aplicar e pronto.
+
+[Como colocar ela como uma unidade (P:)]
+- Ferramentas -> Usuarios e computadores do active directory
+- Escolha um usuário
+- Perfil
+- Conectado a P: \\servidor\publica
+- Ok
+- Aplicar e pronto.
+
+[Criar uma pasta para o usuario]
