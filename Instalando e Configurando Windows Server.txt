@@ -240,3 +240,37 @@ Configs de DNS:
 - Aplicar e pronto.
 
 [Criar uma pasta para o usuario]
+- Entre em C: (no servidor)
+- Crie uma pasta (Pasta Base)
+- Clique nela com o botão direito -> Propriedades -> Compartilhamento -> Compartilhamento Avançado
+- Compartilhar pasta [check]
+- Nome do compartilhamento: Pasta Base$ (O $ serve para deixar a pasta oculta no sistema)
+- Permissões
+- Remova todos
+- Click em adicionar
+- No campo de texto digite "usu" e aperte em "Verificar Nomes"
+- Selecione "Usuários do Domínio"
+- Click OK
+- Permissões para Usuários do Domínio:
+- Click em controle total (Permitir)
+- Aplicar e OK.
+
+Em seguida:
+
+- Click novamente com o botão direito sobre a pasta base
+- Click em propriedades -> Segurança -> Avançadas
+- Click em "Desabilitar Herança"
+- Selecione "Converter as permissões herdadas[...]"
+- Agora selecione as entidades de segurança (Usuários) e remova-os
+Deixar apenas (Sistema,Administradores,Joao Victor JV[Se existir],Proprietário Criador)
+- Click OK, Aplicar.
+
+Em seguida:
+
+- Entre em Usuários e Computadores do Active-Directory
+- Escolha os usuários que terão sua propria pasta do servidor.
+- Dois clicks no usuário -> Perfil
+- Pasta base:
+	Conectar: P: a: \\servidor\\pasta base$\%username%
+- Aplicar, OK.
+
